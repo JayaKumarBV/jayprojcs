@@ -205,7 +205,7 @@ public class Main {
         //String message = "Hello \"Jay\"";
 
 */
-
+/*
             final byte MONTHS_IN_YEAR = 12;
             final byte PERCENT = 100;
 
@@ -228,6 +228,59 @@ public class Main {
 
             String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
             System.out.println("Mortgage: "+mortgageFormatted);
+*/
+            // comparison operator
+            int x= 1 ;
+            int y = 2 ;
+            System.out.println( x <= y ); //== boolean expression // != inequality //> >= < <=
+
+            //logical operator
+
+            int temperature = 12;
+            boolean isWarm = temperature > 20 && temperature < 30; //java looks left to right
+            System.out.println(isWarm);
+
+
+            boolean hasHighIncome = false;
+            boolean hasGoodCredit = true;
+            boolean hasCriminalRecord = true;
+            boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+            System.out.println(isEligible);
+
+            //ifstatements
+            int temp = 31;
+            if (temp > 30) {
+                    System.out.println("Its a Hot Day");
+                    System.out.println("Drink Water");
+            }
+            else if (temp > 20 )
+                    System.out.println("Beautiful day");
+            else
+                    System.out.println("Cold day");
+
+            // simplify if statements
+            int income = 90_000;
+          //  boolean hasHighIncome2 = false;
+        /*stage 1
+                    if (income > 100_00){
+                             hasHighIncome2 = true;
+                    }
+                    else hasHighIncome2 = false ;
+                    System.out.println(hasHighIncome2 );
+        */
+            /*
+            * stage 2
+            *  if (income > 100_00){
+                     hasHighIncome2 = true;
+            }
+            else hasHighIncome2 = true ;
+            System.out.println(hasHighIncome2 );
+            * */
+            boolean hasHighIncome3 = (income > 100_000);
+
+            //Ternary operator
+
+            int income_tern = 120_000;
 
     }
 
