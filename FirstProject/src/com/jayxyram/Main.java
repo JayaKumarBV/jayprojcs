@@ -205,30 +205,7 @@ public class Main {
         //String message = "Hello \"Jay\"";
 
 */
-/*
-            final byte MONTHS_IN_YEAR = 12;
-            final byte PERCENT = 100;
 
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.print("Principal: ");
-            int principal = scanner.nextInt();
-
-            System.out.print("Annual Interest Rate: ");
-            float annualInterest = scanner.nextFloat();
-            float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
-
-            System.out.print("Period (Years): ");
-            byte years = scanner.nextByte();
-            int numberOfPayments = years * MONTHS_IN_YEAR;
-
-            double mortgage = principal *
-                    (monthlyInterest * Math.pow(1+monthlyInterest,numberOfPayments))
-                    /(Math.pow(1+monthlyInterest,numberOfPayments)-1);
-
-            String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-            System.out.println("Mortgage: "+mortgageFormatted);
-*/
             // comparison operator
             int x= 1 ;
             int y = 2 ;
@@ -331,8 +308,26 @@ public class Main {
             else if (number % 3 == 0)
                     System.out.println("buzz");
             else System.out.println(number);
-
+/*
         //for loops
+            for(int i = 5; i > 0; i--)
+                    System.out.println("Hello World"+ i);
+
+        //while loops
+
+            int i = 0;
+            while (i>0){
+                    System.out.println("Hello World"+ i);
+                    i--;
+            }
+            */
+        //for each
+
+                    String[] fruits ={"Apple","Orange","Banana"};
+                    for (String fruit : fruits)
+                            System.out.println(fruit);
+
+
 
     }
 
