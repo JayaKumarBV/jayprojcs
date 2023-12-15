@@ -281,6 +281,58 @@ public class Main {
             //Ternary operator
 
             int income_tern = 120_000;
+            String className = income_tern >100_000 ? "First" : "Economy";
+            System.out.println(className);
+
+            //Switch
+            String role = "admin";
+            switch (role) {
+                    case "admin":
+                            System.out.println("admin switch");
+                            break; //if not used , next statemsnts will run
+
+                    case "moderator":
+                            System.out.println("moderator switch");
+                            break;
+                    case "guest":
+                            System.out.println("guest switch");
+                            break;
+            }
+
+                if (role == "admin")
+                        System.out.println("admin you are");
+                else if (role == "moderator")
+                        System.out.println("moderator");
+                else
+                        System.out.println("guest");
+
+
+            //Fizzbuzz
+        Scanner scanner = new Scanner(System.in);// gets input
+        System.out.print("Enter Number: ");
+        int number = scanner.nextInt();
+
+        if (number % 5 ==0 && number % 3 == 0 )
+                    System.out.println("FizzBuzz");
+        else if (number % 3 == 0) 
+                System.out.println("buzz");
+        else if (number % 5 ==0 )
+                    System.out.println("Fizz");
+        else System.out.println(number);
+
+
+
+        //try 1
+            if (number % 5 ==0 ) {
+                    if (number % 3 == 0)
+                            System.out.println("FizzBuzz");
+                    else System.out.println("Fizz");
+            }
+            else if (number % 3 == 0)
+                    System.out.println("buzz");
+            else System.out.println(number);
+
+        //for loops
 
     }
 
